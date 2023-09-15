@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/homepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Homepage"
+        android:textColor="@color/donker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homepage"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_toRightOf="@id/welcome"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/primary"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+
+            <TextView
+                android:id="@+id/your"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/your"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textColor="@color/primary"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/has"
+                android:layout_below="@id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="has been activated"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <TextView
+            android:id="@+id/your1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_marginStart="8dp"
+            android:layout_toRightOf="@id/your1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/active"
+            android:layout_below="@id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="has been registered"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

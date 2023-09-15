@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/donker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/register"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded"
+        android:hint="Username"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/username"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/rounded"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/email"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/rounded"
+        android:hint="Phone" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/phone"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded"
+        android:hint="Password" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        >
+
+        <CheckBox
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="@color/primary"
+            android:textSize="11sp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms"
+            android:layout_marginTop="19dp"
+            android:layout_marginStart="3dp"
+            android:layout_toRightOf="@id/point"
+            android:textSize="11sp"
+            android:textColor="@color/primary"/>
+
+        <TextView
+            android:id="@+id/and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and"
+            android:layout_marginTop="19dp"
+            android:layout_marginStart="3dp"
+            android:layout_toRightOf="@id/terms"
+            android:textSize="11sp"
+         />
+
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conditons"
+            android:textColor="@color/primary"
+            android:layout_marginTop="19dp"
+            android:layout_marginStart="3dp"
+            android:layout_toRightOf="@id/and"
+            android:textSize="11sp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <Space
+        android:layout_below="@id/password"
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/space"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        app:cornerRadius="15dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/primary"
+        android:text="Register" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/already"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have an Account?"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/already"
+            android:layout_marginStart="4dp"
+            android:text="Log in"
+            android:textSize="13sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/primary"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
