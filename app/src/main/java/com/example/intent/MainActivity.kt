@@ -1,6 +1,7 @@
 package com.example.intent
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.intent.databinding.ActivityMainBinding
@@ -36,6 +37,28 @@ class MainActivity : AppCompatActivity() {
                 val intentThird = Intent(this@MainActivity, activity_third::class.java)
                 startActivity(intentThird)
             }
+
+            instagram.setOnClickListener{
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse("https://www.linkedin.com/in/shyrath3104/")
+                startActivity(intent)
+            }
+
+            linkedin.setOnClickListener{
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse("https://www.instagram.com/shy.ath/")
+                startActivity(intent)
+            }
+
+            github.setOnClickListener{
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse("https://github.com/J0key")
+                startActivity(intent)
+            }
+
+
+
+
 
 
         }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#818cf8"
     android:gravity="center"
     tools:context=".MainActivity">
 
@@ -26,6 +27,7 @@
         android:layout_below="@id/login"
         android:layout_marginStart="30dp"
         android:layout_marginTop="37dp"
+        android:textColor="@color/black"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/rounded"
@@ -40,6 +42,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
+        android:textColor="@color/black"
         android:paddingLeft="20dp"
         android:inputType="textPassword"
         android:background="@drawable/rounded"
@@ -78,6 +81,7 @@
         android:text="Login" />
 
     <RelativeLayout
+        android:id="@+id/under_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/login_btn"
@@ -108,8 +112,42 @@
 
             />
 
-
     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linkedin"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/under_login"
+        android:background="@drawable/instagram"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/instagram"
+        android:layout_toRightOf="@id/linkedin"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/under_login"
+        android:background="@drawable/linkedin"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/github"
+        android:layout_toLeftOf="@id/linkedin"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/under_login"
+        android:background="@drawable/github"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
 
 
 </RelativeLayout>
