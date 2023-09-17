@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Intent</string>
-<!--    <string name="terms">Terms</string>-->
-<!--    <string name="conditions">Conditions</string>-->
+    <!--    <string name="terms">Terms</string>-->
+    <!--    <string name="conditions">Conditions</string>-->
 
 
     <string name="checkbox">By checking the box you agree to our      </string>
